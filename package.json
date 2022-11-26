@@ -8,16 +8,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install",
+    "prepare": "husky install && chmod ug+x .husky/*",
     "test": ""
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "run-p lint check-branch-name"
     }
   },
   "lint-staged": {
-    "*": "prettier --write"
+    ".{ts,json}": "prettier --write",
+    ".ts": "eslint"
   },
   "dependencies": {
     "@types/node": "18.11.9",
