@@ -4,10 +4,10 @@ export type LiveEventData = {
   StartTime: string;
   TimeZone: string;
   Status: string;
-  LiveEventId: null;
-  LiveFightId: null;
-  LiveRoundNumber: null;
-  LiveRoundElapsedTime: null;
+  LiveEventId: null | number;
+  LiveFightId: null | number;
+  LiveRoundNumber: null | number;
+  LiveRoundElapsedTime: null | string;
   Organization: Organization;
   Location: Location;
   FightCard: FightCard[];

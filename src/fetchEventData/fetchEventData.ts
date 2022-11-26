@@ -13,6 +13,7 @@ export const fetchEventData = async (eventNum = 1114): Promise<LiveEventData> =>
     return LiveEventDetail;
   } catch (err) {
     console.log(err);
+    throw(err);
   }
 };
 
