@@ -2,22 +2,23 @@
   "name": "ufc_project",
   "version": "0.1.0",
   "private": true,
-  "type":"module",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install",
+    "prepare": "husky install && chmod ug+x .husky/*",
     "test": ""
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "run-p lint check-branch-name"
     }
   },
   "lint-staged": {
-    "*": "prettier --write"
+    ".{ts,json}": "prettier --write",
+    ".ts": "eslint"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -39,6 +40,6 @@
     "husky": "^8.0.0",
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",
-    "lint-staged": "^13.0.3"
+    "lint-staged": "^13.0.4"
   }
 }
