@@ -8,8 +8,7 @@
 - [] frontend with Styled Components
 
 
-- Find a reliable source of ufc fight info
-- write a playwright script to scrape it
+- [x] Find a reliable source of ufc fight info
 - save in my database
 - create api with express
 - render on front end
