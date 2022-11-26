@@ -7,6 +7,7 @@
 - [] api with Express
 - [] frontend with Styled Components
 
+===
 
 - [x] Find a reliable source of ufc fight info
 - save in my database
