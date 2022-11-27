@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "author": "Ben Weston",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install && chmod ug+x .husky/*",
-    "test": ""
+    "test": "jest"
   },
   "husky": {
     "hooks": {

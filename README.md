@@ -1,9 +1,9 @@
 ## Plans
 
-- [] setup project packages
-- [] setup testing with jest
+- [x] setup project packages
+- [x] setup testing with jest
 - [] setup ci/cd
-- [] setup Husky pre-commit rules
+- [x] setup Husky pre-commit rules
 - [] api with Express
 - [] frontend with Styled Components
 
